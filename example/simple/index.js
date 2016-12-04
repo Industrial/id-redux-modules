@@ -1,21 +1,37 @@
 const React = require('react')
-const ReactDOM = require('react-dom')
-const reduxThunk = require('redux-thunk')
-const redux = require('redux')
+const { createStore } = require('redux')
+const { HashRouter } = require('react-router')
+const { Provider } = require('react-redux')
+const { render } = require('react-dom')
 
-const reduxModules = require('../..')
-const App = require('./App')
+const { getReducers, getRoutes } = require('../..')
+
+// This is the main module, but just a module like the others.
 const application = require('./application')
-const reducers = require('./reducers')
 
-const middleware = [ reduxThunk ]
-const store = redux.createStore(reducers, middleware)
-const routes = reduxModules.getRoutes(application, store)
+// The middleware stack. You should probably add things like redux-thunk.
+const middleware = [ ]
 
-ReactDOM.render(
-  <App
-    store={store}
-    routes={routes}
-  />,
-  document.querySelector('#root')
+// Use getReducers to fetch all module reducers as one tree.
+const reducers = getReducers(application)
+
+// Create the redux store with the reducers and the middleware.
+const store = createStore(reducers, middleware)
+
+// Use getRoutes to fetch all module routes as one tree.
+const routes = getRoutes(application, store)
+
+// The root DOM element to render the routes under.
+const rootElement = document.querySelector('#root')
+
+// Connect the router with the store and render the routes.
+render(
+  <Provider store={store} key="Application">
+    <HashRouter>
+      <div>
+        {routes}
+      </div>
+    </HashRouter>
+  </Provider>,
+  rootElement
 )

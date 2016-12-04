@@ -1,15 +1,15 @@
-const { getRoutes, getReducers } = require('..')
-
-const BlogModule = require('./modules/Blog')
+// Plain and simple.
 
 const reducers = require('./reducers')
 const routes = require('./routes')
 
+const blogModule = require('./modules/blog')
+
 module.exports = {
-    name: 'Application',
+  name: 'Application',
 
-    modules: [ BlogModule ],
+  modules: [ blogModule ],
 
-    reducers,
-    routes
+  reducers,
+  routes,
 }
