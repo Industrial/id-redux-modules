@@ -1,8 +1,7 @@
-# redux-streams
-Store middleware for [Redux](https://github.com/rackt/redux) that let's you
-dispatch streams of actions.
+# redux-id-modules
+Module composition for [Redux](https://github.com/rackt/redux) that let's you structure your app the way you want.
 
-[![Build Status](https://travis-ci.org/Industrial/redux-streams.svg?branch=master)](https://travis-ci.org/Industrial/redux-streams)
+[![Build Status](https://travis-ci.org/Industrial/redux-id-modules.svg?branch=master)](https://travis-ci.org/Industrial/redux-id-modules)
 
 ## Installation
 ```
