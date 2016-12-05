@@ -10,4 +10,4 @@ npm install --save redux-id-modules
 ```
 
 ## Usage
-See [Examples](https://github.com/Industrial/redux-id-modules/blob/master/examples).
+See the [Example](https://github.com/Industrial/redux-id-modules/blob/master/example).
