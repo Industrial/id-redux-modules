@@ -1,5 +1,6 @@
 # redux-id-modules
-Module composition for [Redux](https://github.com/rackt/redux) that let's you structure your app the way you want.
+Groups your [Redux](https://github.com/rackt/redux) reducers and routes into
+modules so you can easily compose them.
 
 [![Build Status](https://travis-ci.org/Industrial/redux-id-modules.svg?branch=master)](https://travis-ci.org/Industrial/redux-id-modules)
 
