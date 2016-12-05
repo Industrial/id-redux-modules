@@ -16,11 +16,19 @@ See the [Example](https://github.com/Industrial/redux-id-modules/blob/master/exa
 
 ### Module definition
 Define a module as an object with these properties:
+
     module.exports = {
+      // Name of the module
       name: 'MyModule',
-      modules: [],
-      reducers: {},
-      routes: () => {},
+
+      // Reducers object that this module exports.
+      reducers: require('./reducers'),
+
+      // Routes function that this module exports.
+      routes: require('./routes'),
+
+      // List of submodules
+      modules: [ require('./modules/MyOtherModule') ],
     }
 
 ### getReducers(module)
