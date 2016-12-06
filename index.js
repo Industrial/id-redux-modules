@@ -1,4 +1,5 @@
 const React = require('react')
+
 const _ = require('lodash')
 const combineReducers = require('redux').combineReducers
 
