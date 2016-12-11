@@ -27,7 +27,11 @@ const myModule = new Module({
 * [Module](#Module)
     * [new Module(options)](#new_Module_new)
     * [.getActions()](#Module+getActions) ⇒ <code>Object</code>
+    * [.addAction(name)](#Module+addAction) ⇒ <code>undefined</code>
+    * [.removeAction(name)](#Module+removeAction) ⇒ <code>undefined</code>
+    * [.setActions(actions)](#Module+setActions) ⇒ <code>undefined</code>
     * [.getActionCreators()](#Module+getActionCreators) ⇒ <code>Object</code>
+    * [.addActionCreator(name, actionCreator)](#Module+addActionCreator) ⇒ <code>undefined</code>
     * [.getComponents()](#Module+getComponents) ⇒ <code>Object</code>
     * [.getRoutes()](#Module+getRoutes) ⇒ <code>Object</code>
     * [.getReducers()](#Module+getReducers) ⇒ <code>Object</code>
@@ -58,6 +62,39 @@ Returns the actions of the module.
 
 **Kind**: instance method of <code>[Module](#Module)</code>
 **Returns**: <code>Object</code> - actions
+<a name="Module+addAction"></a>
+
+### module.addAction(name) ⇒ <code>undefined</code>
+Adds an action to the module.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>String</code> | The name of the action. |
+
+<a name="Module+removeAction"></a>
+
+### module.removeAction(name) ⇒ <code>undefined</code>
+Removes an action from the module.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>String</code> | The name of the action. |
+
+<a name="Module+setActions"></a>
+
+### module.setActions(actions) ⇒ <code>undefined</code>
+Replaces any existing actions with the supplied ones..
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+
+| Param | Type | Description |
+| --- | --- | --- |
+| actions | <code>Object</code> | The new actions. |
+
 <a name="Module+getActionCreators"></a>
 
 ### module.getActionCreators() ⇒ <code>Object</code>
@@ -65,6 +102,18 @@ Returns the actionCreators of the module.
 
 **Kind**: instance method of <code>[Module](#Module)</code>
 **Returns**: <code>Object</code> - actionCreators
+<a name="Module+addActionCreator"></a>
+
+### module.addActionCreator(name, actionCreator) ⇒ <code>undefined</code>
+Adds an actionCreator to the module.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>String</code> | The name of the actionCreator. |
+| actionCreator | <code>function</code> | The actionCreator function. |
+
 <a name="Module+getComponents"></a>
 
 ### module.getComponents() ⇒ <code>Object</code>
