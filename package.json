@@ -1,6 +1,6 @@
 {
   "name": "id-redux-modules",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Create Redux app modules and compose them",
   "main": "index.js",
   "engines": {
