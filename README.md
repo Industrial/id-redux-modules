@@ -1,17 +1,17 @@
-# redux-id-modules
+# id-redux-modules
 Groups your [Redux](https://github.com/rackt/redux) reducers and routes into
 modules so you can easily compose them.
 
-[![Build Status](https://travis-ci.org/Industrial/redux-id-modules.svg?branch=master)](https://travis-ci.org/Industrial/redux-id-modules)
+[![Build Status](https://travis-ci.org/Industrial/id-redux-modules.svg?branch=master)](https://travis-ci.org/Industrial/id-redux-modules)
 
 ## Installation
 ```
-npm install --save redux-id-modules
+npm install --save id-redux-modules
 ```
 
 ## Usage
 ```js
-const Module = require('redux-id-modules').Module
+const Module = require('id-redux-modules').Module
 
 const myModule = new Module({
   name: "MyModule",

@@ -1,5 +1,5 @@
 {
-  "name": "redux-id-modules",
+  "name": "id-redux-modules",
   "version": "1.0.1",
   "description": "Create Redux app modules and compose them",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Industrial/redux-id-modules.git"
+    "url": "git+https://github.com/Industrial/id-redux-modules.git"
   },
   "keywords": [
     "redux",
@@ -23,9 +23,9 @@
   "author": "Tom Wieland <tom.wieland@gmail.com>",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/Industrial/redux-id-modules/issues"
+    "url": "https://github.com/Industrial/id-redux-modules/issues"
   },
-  "homepage": "https://github.com/Industrial/redux-id-modules#readme",
+  "homepage": "https://github.com/Industrial/id-redux-modules#readme",
   "dependencies": {
     "eslint": "^3.12.0",
     "lodash": "^4.17.2",
