@@ -7,6 +7,8 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "eslint": "./node_modules/.bin/eslint lib/Module.js",
+    "jsdoc": "./node_modules/.bin/jsdoc2md lib/Module.js",
     "test": "./node_modules/.bin/mocha ./lib/**/*.test.js",
     "test:watch": "./node_modules/.bin/mocha ./lib/**/*.test.js --watch"
   },
