@@ -10,29 +10,57 @@ npm install --save redux-id-modules
 ```
 
 ## Usage
-See the [Example](https://github.com/Industrial/redux-id-modules/blob/master/example).
+```js
+const Module = require('redux-id-modules').Module
+
+const myModule = new Module({
+  name: "MyModule",
+  store: myStore,
+})
+```
 
 ## API
 
-### Module definition
-Define a module as an object with these properties:
+### constructor(options)
 
-    module.exports = {
-      // Name of the module
-      name: 'MyModule',
+### getActions()
 
-      // Reducers object that this module exports.
-      reducers: require('./reducers'),
+### addAction(name)
 
-      // Routes function that this module exports.
-      routes: require('./routes'),
+### removeAction(name)
 
-      // List of submodules
-      modules: [ require('./modules/MyOtherModule') ],
-    }
+### setActions(actions)
+
+### getActionCreators()
+
+### addActionCreator(name, actionCreator)
+
+### removeActionCreator(name)
+
+### setActionCreators(actionCreators)
+
+### getComponents()
+
+### setComponents(components)
+
+### getRoutes()
+Returns a React Element that is a composition of the routes of the module and of all it's submodules
+
+### setRoutes(routes)
 
 ### getReducers(module)
 Returns a reducer function for the module and all it's submodules or null
 
-### getRoutes(module, store)
-Returns a React Element that is a composition of the routes of the module and of all it's submodules
+### addReducer(name, reducer)
+
+### removeReducer(name)
+
+### setReducers(reducers)
+
+### getSubmodules()
+
+### addSubmodule(options)
+
+### removeSubmodule(submodule)
+
+### setSubmodules(submodules)
