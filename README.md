@@ -19,48 +19,35 @@ const myModule = new Module({
 })
 ```
 
-## API
+## Module
+**Kind**: global class
 
-### constructor(options)
+* [Module](#Module)
+    * [new Module(options)](#new_Module_new)
+    * [.getActions()](#Module+getActions) ⇒ <code>Object</code>
 
-### getActions()
+<a name="new_Module_new"></a>
 
-### addAction(name)
+### new Module(options)
+Represents a composable collection of redux parts.
 
-### removeAction(name)
 
-### setActions(actions)
+| Param | Type | Description |
+| --- | --- | --- |
+| options | <code>Object</code> |  |
+| options.name | <code>String</code> | The name of the module. |
+| options.store | <code>Object</code> | The Redux store instance. |
+| options.actions | <code>Object</code> | The Redux actions the module can dispatch. |
+| options.actionCreators | <code>Object</code> | The action creators for the actions. |
+| options.components | <code>Object</code> | The components the module uses. |
+| options.routes | <code>function</code> | The final route component returned from the module. |
+| options.reducers | <code>Object</code> | The reducers of the module. They process the module's actions. |
+| options.submodules | <code>Object</code> | An array of submodules. |
 
-### getActionCreators()
+<a name="Module+getActions"></a>
 
-### addActionCreator(name, actionCreator)
+### module.getActions() ⇒ <code>Object</code>
+Returns the actions of the module.
 
-### removeActionCreator(name)
-
-### setActionCreators(actionCreators)
-
-### getComponents()
-
-### setComponents(components)
-
-### getRoutes()
-Returns a React Element that is a composition of the routes of the module and of all it's submodules
-
-### setRoutes(routes)
-
-### getReducers(module)
-Returns a reducer function for the module and all it's submodules or null
-
-### addReducer(name, reducer)
-
-### removeReducer(name)
-
-### setReducers(reducers)
-
-### getSubmodules()
-
-### addSubmodule(options)
-
-### removeSubmodule(submodule)
-
-### setSubmodules(submodules)
+**Kind**: instance method of <code>[Module](#Module)</code>
+**Returns**: <code>Object</code> - actions
