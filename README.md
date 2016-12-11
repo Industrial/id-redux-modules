@@ -19,12 +19,19 @@ const myModule = new Module({
 })
 ```
 
+<a name="Module"></a>
+
 ## Module
 **Kind**: global class
 
 * [Module](#Module)
     * [new Module(options)](#new_Module_new)
     * [.getActions()](#Module+getActions) ⇒ <code>Object</code>
+    * [.getActionCreators()](#Module+getActionCreators) ⇒ <code>Object</code>
+    * [.getComponents()](#Module+getComponents) ⇒ <code>Object</code>
+    * [.getRoutes()](#Module+getRoutes) ⇒ <code>Object</code>
+    * [.getReducers()](#Module+getReducers) ⇒ <code>Object</code>
+    * [.getSubmodules()](#Module+getSubmodules) ⇒ <code>Array</code>
 
 <a name="new_Module_new"></a>
 
@@ -51,3 +58,40 @@ Returns the actions of the module.
 
 **Kind**: instance method of <code>[Module](#Module)</code>
 **Returns**: <code>Object</code> - actions
+<a name="Module+getActionCreators"></a>
+
+### module.getActionCreators() ⇒ <code>Object</code>
+Returns the actionCreators of the module.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+**Returns**: <code>Object</code> - actionCreators
+<a name="Module+getComponents"></a>
+
+### module.getComponents() ⇒ <code>Object</code>
+Returns the components of the module.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+**Returns**: <code>Object</code> - components
+<a name="Module+getRoutes"></a>
+
+### module.getRoutes() ⇒ <code>Object</code>
+Calls the modules' routes function and composes it with the routes of the
+submodules, creating one route tree.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+**Returns**: <code>Object</code> - Routes
+<a name="Module+getReducers"></a>
+
+### module.getReducers() ⇒ <code>Object</code>
+Returns the reducers of the module combined with the reducers of the
+submodules.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+**Returns**: <code>Object</code> - actions
+<a name="Module+getSubmodules"></a>
+
+### module.getSubmodules() ⇒ <code>Array</code>
+Returns the submodules of the module.
+
+**Kind**: instance method of <code>[Module](#Module)</code>
+**Returns**: <code>Array</code> - submodules
