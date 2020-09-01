@@ -20,7 +20,7 @@
     "redux",
     "react"
   ],
-  "author": "Tom Wieland <tom.wieland@gmail.com>",
+  "author": "Industrial",
   "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/Industrial/id-redux-modules/issues"
